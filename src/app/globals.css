@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --brand-magenta: #C02990;
+  --brand-green: #22C55E;
+  --brand-dark: #0E1B2B;
+  --brand-light: #E6EAED;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--brand-dark);
+    color: var(--brand-light);
+  }
+  ::selection {
+    background-color: var(--brand-magenta);
+    color: var(--brand-light);
+  }
+}
